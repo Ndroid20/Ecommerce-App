@@ -20,6 +20,6 @@ db.connect((err) => {
 
 app.get("/", (req, res) => {});
 
-app.listen(3001, () => {
-  console.log("running on port 3306");
+app.listen(process.env.PORT || 5000, () => {
+  console.log("running on port");
 });
